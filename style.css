@@ -2,8 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
 }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 a {
 	text-decoration: none;
 }
@@ -21,4 +27,123 @@ header {
 	list-style: none;
 	display: inline-block;
 	margin: 0 20px;
+	float: right;
+}
+
+.main-visual {
+	width: 100%;/*横幅*/
+	height: 600px;/*高さ*/
+	background-image: url(img/mainImg.jpg);
+	background-size: cover;/*縦横比を維持したまま、背景領域を埋め尽くす*/
+	background-position: center;/*背景画像を中央に配置*/
+}
+
+.main-visual-content {
+	color: white;
+	text-align: center;
+	padding-top: 300px;
+}
+
+.vision {
+	margin: 40px 200px;
+	text-align: center;
+	background-color: red;
+}
+
+.message-section {
+	height: auto;
+	background-color: aquamarine;
+}
+
+.message-image {
+	display: inline-block;
+	width: 50%;
+	height: 400px;
+	float: left;
+}
+
+.image1 {
+	text-align: left;
+}
+
+.image2 {
+	text-align: right;
+}
+
+.comment1 {
+	display: inline-block;
+}
+
+.comment2 {
+	text-align: left;
+}
+
+.message-comment {
+	width: 50%;
+	float: left;
+	height: 400px;
+	text-align: center;
+}
+
+.service {
+	width: 90%;
+	height: 400px;
+	margin: 0 auto;
+	background-color: mediumorchid;
+	text-align: center;
+}
+
+.part > img {
+  border-radius: 50%;
+	border-width: 4px;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+.part {
+  float: left;
+	width: 30%;
+	position: relative;
+	margin: 20px;
+}
+
+.text-contents {
+	width: 100%;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+
+.story {
+	width: 100%;/*横幅*/
+	height: 200px;/*高さ*/
+	background-image: url(img/bgSec04.jpg);
+	background-size: cover;/*縦横比を維持したまま、背景領域を埋め尽くす*/
+	background-position: center;/*背景画像を中央に配置*/
+	color: white;
+}
+
+.story-text {
+	width: 30%;
+	float: left;
+}
+
+.story-text h3 {
+	text-align: center;
+}
+
+.company-info {
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+	background-color: olive;
+}
+
+footer {
+  width: 100%; /* 横幅 */
+	height: 120px; /* 高さ */
+	text-align: center;
+	margin: 0 auto;
+	background-color: mediumturquoise;
 }
