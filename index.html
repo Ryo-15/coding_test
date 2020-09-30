@@ -9,25 +9,33 @@
 <body>
 
   <header>
-    <nav>
-      <ul>
-        <li class="nav-list-item">TOP</li>
-        <li class="nav-list-item">VISION</li>
-        <li class="nav-list-item">MESSAGE</li>
-        <li class="nav-list-item">SERVICE</li>
-        <li class="nav-list-item">STORY</li>
-        <li class="nav-list-item">PROFILE</li>
-      </ul>
-    </nav>
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <nav>
+          <ul>
+            <li class="nav-list-item">TOP</li>
+            <li class="nav-list-item">VISION</li>
+            <li class="nav-list-item">MESSAGE</li>
+            <li class="nav-list-item">SERVICE</li>
+            <li class="nav-list-item">STORY</li>
+            <li class="nav-list-item">PROFILE</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
     <div class="main-visual">
       <div class="main-visual-content">
         <h1>Uesfilulum mauris</h1>
         <p>最新技術と自然との調和を目指す</p>
       </div>
     </div>
-  </header>
 
-  <main>
     <!-- VISION -->
     <div class="vision">
       <h2>VISION</h2>
@@ -80,20 +88,22 @@
 
     <!-- STORY -->
     <div class="story">
-      <div class="story-text">
-        <h3>STORY</h3>
-        <p>科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、研究という意義であるならばこれは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいうには及ばないはずである。</p>
-      </div>
+      <div class="story-content" >
+        <div class="story-text">
+          <h3>STORY</h3>
+          <p>科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、研究という意義であるならばこれは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいうには及ばないはずである。</p>
+        </div>
 
-      <div class="story-text">
-        <h3>SUCCESS</h3>
-        <p>ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれているということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいうには及ばないはずである。</p>
+        <div class="story-text">
+          <h3>SUCCESS</h3>
+          <p>ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれているということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいうには及ばないはずである。</p>
+        </div>
       </div>
     </div>
 
     <!-- company -->
     <div class="company-info">
-      <table>
+      <table class="company-content">
         <tr>
           <td>社名</td>
           <td>Sample Company</td>
@@ -123,6 +133,10 @@
           </td>
         </tr>
       </table>
+      <!-- map -->
+      <div class="company-content">
+        <img src="img/sec02_01.jpg" class="map">
+      </div>
     </div>
   </main>
 
