@@ -231,12 +231,12 @@ footer {
 	#nav-content {
 		overflow: auto;
 		position: fixed;
-		top: 0;
+		top: 60px;
 		left: 0;
 		z-index: 9999;
-		width: 90%;
-		max-width: 330px;
-		height: 100%;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
 		background: #fff;
 		transition: .3s ease-in-out;
 		-webkit-transform: translateX(-105%);
@@ -257,8 +257,11 @@ footer {
 	.nav-list-item {
 		list-style: none;
 		display: block;
-		margin: 0 20px;
+		margin: 20px;
 		float: left;
+		width: 100%;
+		text-align: left;
+		border-bottom: 1px solid gray;
 	}
 
 	.main-visual {
