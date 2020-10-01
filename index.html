@@ -14,14 +14,26 @@
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
-        <nav>
+        <nav class="l-drawer__menu">
           <ul>
-            <li class="nav-list-item">TOP</li>
-            <li class="nav-list-item">VISION</li>
-            <li class="nav-list-item">MESSAGE</li>
-            <li class="nav-list-item">SERVICE</li>
-            <li class="nav-list-item">STORY</li>
-            <li class="nav-list-item">PROFILE</li>
+            <li class="nav-list-item l-drawer__item">
+              <a class="l-drawer__item-inner">TOP</a>
+            </li>
+            <li class="nav-list-item l-drawer__item">
+              <a class="l-drawer__item-inner">VISION</a>
+            </li>
+            <li class="nav-list-item l-drawer__item">
+              <a class="l-drawer__item-inner">MESSAGE</a>
+            </li>
+            <li class="nav-list-item l-drawer__item">
+              <a class="l-drawer__item-inner">SERVICE</a>
+            </li>
+            <li class="nav-list-item l-drawer__item">
+              <a class="l-drawer__item-inner">STORY</a>
+            </li>
+            <li class="nav-list-item l-drawer__item">
+              <a class="l-drawer__item-inner">PROFILE</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -43,27 +55,23 @@
     </div>
 
     <!-- MESSAGE -->
-    <div class="message-section clearfix">
-      <div class="message">
-        <div class="image1">
-          <img src="img/sec02_01.jpg" class="message-image">
-        </div>
-        <div class="message-comment comment1">
+    <ul class="message-section">
+      <li class="message">
+        <img src="img/sec02_01.jpg" class="message-image">
+        <div class="message-comment">
           <h2>MESSAGE</h2>
           <p>ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいう。</p>
         </div>
-      </div>
+      </li>
 
-      <div class="message">
-        <div class="message-comment comment2">
+      <li class="message">
+        <img src="img/sec02_02.jpg" class="message-image">
+        <div class="message-comment">
           <h2>MESSAGE</h2>
           <p>ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいう。</p>
         </div>
-        <div class="image2">
-          <img src="img/sec02_02.jpg" class="message-image">
-        </div>
-      </div>
-    </div>
+      </li>
+    </ul>
 
     <!-- SERVICE -->
     <div class="service">
@@ -133,7 +141,7 @@
           </td>
         </tr>
       </table>
-      <!-- map -->
+      <!-- mapの代わりに代替画像を使用 -->
       <div class="company-content">
         <img src="img/sec02_01.jpg" class="map">
       </div>
@@ -141,7 +149,7 @@
   </main>
 
   <footer>
-    <div class="copyright">Copyright&copy;20XX Sample Inc. All Rights Reserved. Design by hhtp://f-tpl.com</div>
+    <p>Copyright&copy;20XX Sample Inc. All Rights Reserved. Design by hhtp://f-tpl.com</p>
   </footer>
 
 </body>
